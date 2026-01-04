@@ -1,17 +1,44 @@
 body {
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef1ff, #dbe4ff);
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* navbar */
+.app-navbar {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 0.8rem 0;
 }
 
 .navbar-brand {
-    font-weight: bold;
-    color: #0d6efd !important;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    color: #333;
+.brand-accent {
+    color: #ffd6ff;
 }
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar .btn-outline-light {
+    border-width: 2px;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #6a11cb;
+}
+
 
 /* Hero Section */
 .hero-section {
