@@ -8,6 +8,7 @@ public class PageController {
 
     @GetMapping("/")
     public String home() {
+        // 'pages/home' ka matlab hai: templates/pages/home.html
         return "pages/home";
     }
 
@@ -21,13 +22,13 @@ public class PageController {
         return "pages/register";
     }
 
-    @GetMapping("/post/new")
-    public String createPost() {
-        return "pages/create-post";
-    }
-
     @GetMapping("/profile")
     public String profile() {
         return "pages/profile";
+    }
+
+    @GetMapping("/post/new")
+    public String createPost() {
+        return "pages/create-post";
     }
 }
