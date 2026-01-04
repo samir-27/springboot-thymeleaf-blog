@@ -5,6 +5,15 @@ body {
     min-height: 100vh;
 }
 
+.form-control:focus {
+    box-shadow: none;
+    background-color: #f0f2f5 !important;
+    border: 1px solid #0d6efd;
+}
+
+.card {
+    transition: transform 0.2s;
+}
 
 /* navbar */
 .app-navbar {
