@@ -99,3 +99,14 @@ body {
 .gradient-purple {
     background: linear-gradient(135deg, #d501ff, #0088ff);
 }
+
+/* login */
+
+.login-section {
+    height: 90vh;
+}
+
+.login-image {
+    background: rgba(255, 255, 255, 0.08);
+}
+

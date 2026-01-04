@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/base :: layout(~{::section}, 'Login | SocialApp')}">
+
+<section class="login-section d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center g-0 shadow-lg rounded-4 overflow-hidden bg-white">
+
+            <!-- Left Image -->
+            <div class="col-lg-6 d-none d-lg-flex login-image align-items-center justify-content-center">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/003/689/228/small_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg"
+                    alt="Login Illustration" class="img-fluid">
+            </div>
+
+            <!-- Login Form -->
+            <div class="col-lg-6">
+                <div class="border-0 h-100 gradient-purple">
+    <div class="p-5">
+        <h2 class="fw-bold mb-2 text-center text-white">Welcome Back</h2>
+        <p class="text-white-50 text-center mb-4">Sign in to continue</p>
+
+        <form th:action="@{/login}" method="post">
+            <div class="mb-3">
+                <label class="form-label text-white">Email Address</label>
+                <input type="email"
+                       class="form-control form-control-lg auth-input"
+                       name="email"
+                       placeholder="name@example.com"
+                       required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-white">Password</label>
+                <input type="password"
+                       class="form-control form-control-lg auth-input"
+                       name="password"
+                       placeholder="••••••••"
+                       required>
+            </div>
+
+            <div class="d-grid">
+                <button class="btn btn-light btn-lg fw-semibold rounded-3">
+                    Sign In
+                </button>
+            </div>
+        </form>
+
+        <div class="text-center mt-4">
+            <span class="text-white-50">Don’t have an account?</span>
+            <a th:href="@{/register}" class="fw-semibold text-white ms-1">
+                Register
+            </a>
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+</html>
