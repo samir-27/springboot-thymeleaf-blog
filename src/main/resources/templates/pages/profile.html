@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/base :: layout(~{::section}, 'My Profile | SocialApp')}">
+
+<section>
+    <div class="container mt-4">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+            <div style="height: 200px;" class="gradient-purple"></div>
+
+            <div class="card-body position-relative pt-0 px-4">
+                <div class="text-center text-md-start">
+                    <img src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg="
+                        class="rounded-circle border border-5 border-white shadow-sm"
+                        style="width: 150px; height: 150px; margin-top: -75px;">
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                    <div>
+                        <h2 class="fw-bold mb-0">John Doe</h2>
+                        <p class="text-muted">@johndoe_social</p>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                        <button class="btn btn-primary rounded-pill px-4 me-2">Edit Profile</button>
+                        <button class="btn btn-light rounded-pill px-3 border"><i class="bi bi-gear"></i></button>
+                    </div>
+                </div>
+
+                <p class="mt-3 lead fs-6">
+                    Lover of code, coffee, and calm vibes. Building the future one post at a time. 🚀
+                </p>
+
+                <div class="d-flex gap-4 mt-3 border-top pt-3">
+                    <div class="text-center">
+                        <span class="fw-bold d-block">124</span>
+                        <small class="text-muted">Posts</small>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold d-block">5.2k</span>
+                        <small class="text-muted">Followers</small>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold d-block">850</span>
+                        <small class="text-muted">Following</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h4 class="fw-bold mb-4">Recent Posts</h4>
+            <div class="mt-5">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="content-card p-3 h-100">
+                            <div class="rounded-4 overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600"
+                                    class="img-fluid w-100" alt="Tech post" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <p class="fw-bold mb-1">Coding late night... 💻</p>
+                            <p class="text-secondary small">Debugging is like being the detective in a crime movie where
+                                you are also the murderer.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small"><i class="bi bi-clock me-1"></i> 2 hours ago</span>
+                                <div class="text-danger"><i class="bi bi-heart-fill"></i> 45</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="content-card p-3 h-100">
+                            <div class="rounded-4 overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600"
+                                    class="img-fluid w-100" alt="Travel post" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <p class="fw-bold mb-1">Weekend Vibes ⛰️</p>
+                            <p class="text-secondary small">Sometimes you just need to disconnect and enjoy the view.
+                                Peace found!</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small"><i class="bi bi-clock me-1"></i> 5 hours ago</span>
+                                <div class="text-danger"><i class="bi bi-heart-fill"></i> 120</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="content-card p-3 h-100">
+                            <div class="rounded-4 overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600"
+                                    class="img-fluid w-100" alt="Coffee post" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <p class="fw-bold mb-1">Fuel for the Mind ☕</p>
+                            <p class="text-secondary small">Java in my cup, Java in my IDE. Let's build something great
+                                today.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small"><i class="bi bi-clock me-1"></i> Yesterday</span>
+                                <div class="text-danger"><i class="bi bi-heart-fill"></i> 89</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</html>
