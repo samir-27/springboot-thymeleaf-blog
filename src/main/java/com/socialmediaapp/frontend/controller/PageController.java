@@ -31,4 +31,9 @@ public class PageController {
     public String createPost() {
         return "pages/create-post";
     }
+
+    @GetMapping("/explore")
+    public String explore() {
+        return "pages/explore";
+    }
 }

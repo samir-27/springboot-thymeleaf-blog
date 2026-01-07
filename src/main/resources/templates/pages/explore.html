@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      th:replace="~{layout/base :: layout(~{::section}, 'Feed | SocialApp')}">
+
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            
+            <div class="blog-card mb-5 p-2">
+    <div class="post-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" 
+             class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
+    </div>
+    <div class="card-body px-4 pb-4">
+        <div class="d-flex align-items-center mb-3">
+            <span class="category-tag me-3 text-success">Travel</span>
+            <span class="text-muted small">8 min read</span>
+        </div>
+        <h2 class="post-title mb-3 text-dark">Finding Peace in the Mountains of Manali</h2>
+        <p class="text-secondary mb-4 fs-5">There's something magical about waking up to the sound of the Beas river and the sight of snow-capped peaks. If you're looking for an escape, this is it...</p>
+        <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+            <div class="d-flex align-items-center">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara" class="rounded-circle me-2" width="35">
+                <div>
+                    <h6 class="mb-0 fw-bold small">Sara Khan</h6>
+                    <small class="text-muted" style="font-size: 0.7rem;">Jan 6, 2026</small>
+                </div>
+            </div>
+            <div class="post-actions">
+                <button class="btn btn-light rounded-circle me-2"><i class="bi bi-heart"></i></button>
+                <button class="btn btn-light rounded-circle"><i class="bi bi-bookmark"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-card mb-5 p-4 border-start border-primary border-5">
+    <div class="card-body">
+        <div class="d-flex align-items-center mb-3">
+            <span class="category-tag me-3 text-warning">Wellness</span>
+            <span class="text-muted small">3 min read</span>
+        </div>
+        <h2 class="post-title mb-3 text-dark">5 Habits to Improve Your Productivity Without Burnout</h2>
+        <p class="text-secondary mb-4 fs-5">Hustle culture is lying to you. Productivity isn't about doing more; it's about doing what matters most with a clear mind. Here are my top tips...</p>
+        <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+            <div class="d-flex align-items-center">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" class="rounded-circle me-2" width="35">
+                <div>
+                    <h6 class="mb-0 fw-bold small">John Smith</h6>
+                    <small class="text-muted" style="font-size: 0.7rem;">Jan 5, 2026</small>
+                </div>
+            </div>
+            <div class="post-actions">
+                <button class="btn btn-light rounded-circle"><i class="bi bi-share"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-card mb-5 p-2">
+    <div class="post-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" 
+             class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
+    </div>
+    <div class="card-body px-4 pb-4">
+        <div class="d-flex align-items-center mb-3">
+            <span class="category-tag me-3 text-danger">Food</span>
+            <span class="text-muted small">6 min read</span>
+        </div>
+        <h2 class="post-title mb-3 text-dark">The Secret to the Perfect Homemade Pizza Base</h2>
+        <p class="text-secondary mb-4 fs-5">Forget the frozen stuff. A great pizza starts with patience and the right hydration. I've spent months perfecting this 72-hour dough recipe...</p>
+        <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+            <div class="d-flex align-items-center">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Chef" class="rounded-circle me-2" width="35">
+                <div>
+                    <h6 class="mb-0 fw-bold small">Chef Rahul</h6>
+                    <small class="text-muted" style="font-size: 0.7rem;">Jan 4, 2026</small>
+                </div>
+            </div>
+            <div class="post-actions">
+                <span class="text-muted small me-2">42 comments</span>
+                <button class="btn btn-light rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+    </div>
+</section>
+
+</html>
