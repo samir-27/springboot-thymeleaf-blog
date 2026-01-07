@@ -32,6 +32,11 @@ public class PageController {
         return "pages/create-post";
     }
 
+    @GetMapping("/post/1") // Abhi ke liye static ID 1 use kar rahe hain
+    public String postDetail() {
+        return "pages/single-post";
+    }
+
     @GetMapping("/explore")
     public String explore() {
         return "pages/explore";
